@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+        <div id="values" style="display: none;"> <p>a = 24</p> <p>b = 14</p> </div>
+        <div id="equation" style="display: none;"> <p> 24 + 14 = ?</p> </div>
+        <div id="b"> <button id="btn">show equation</button> </div>
+        <div id="r"> <button id="rbtn">show values</button> </div>
+        <div id="h"> <button id="hbtn">Hide all</button> </div>
+    </div>    
+    <script>
+        const ebutton = document.getElementById("b");
+        const rbutton = document.getElementById("r");
+        const hbutton = document.getElementById("h");
+            ebutton.addEventListener("click", () => {
+                values.style.display = "none";
+                equation.style.display = "flex";
+            });
+            rbutton.addEventListener("click", () => {
+                values.style.display = "flex";
+                equation.style.display = "none";
+            });
+            hbutton.addEventListener("click", () => {
+                values.style.display = "none";
+                equation.style.display = "none";
+            });
+
+    </script>
+</body>
+</html>
